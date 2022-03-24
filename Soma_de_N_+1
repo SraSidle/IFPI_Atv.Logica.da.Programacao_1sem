@@ -1,0 +1,7 @@
+console.clear();
+const prompt = require('prompt-sync')();
+
+let adcnum = +prompt('Adicione um número qualquer. ');
+let soma = 1 + adcnum ;
+
+console.log(`A soma de ${adcnum} + 1, é igual a: ${soma}.`);
