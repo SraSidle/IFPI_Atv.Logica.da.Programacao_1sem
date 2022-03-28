@@ -1,0 +1,10 @@
+//Leia uma velocidade em m/s, calcule e escreva esta velocidade em km/h. (Vkm/h = Vm/s * 3.6)
+
+  console.clear();
+const prompt = require('prompt-sync')();
+
+    let velocidadeM = +prompt('Adicione uma velocidade em m/s. '); //pedido da velocidade em m/s ao usuário
+
+    let conversao = (velocidadeM * 3.6);  //variável de conversão da velocidade de m/s para km/h
+
+  console.log(`${velocidadeM} m/s é igual a ${conversao} km/h.`); //retorno do resultado
