@@ -1,0 +1,18 @@
+//Leia 2 números, calcule e escreva a divisão da soma pela subtração dos números lidos.
+console.clear();
+ const prompt = require('prompt-sync')();
+
+  let num1 = +prompt('Adicione um valor numérico. '); 
+  let num2 = +prompt('Adicione outro valor numérico. ');
+
+  let soma = (num1 + num2); // variavel da soma
+  let subt = (num1 - num2); // variavel da subtração
+  let divisao = Math.round(soma / subt); //devolver o resultado sem casas decimais
+
+console.clear();
+
+console.log(`
+A soma de:                ${num1} + ${num2} 
+divida pela subtração de: ${num1} - ${num2}
+é igual a:                 ${divisao}
+`);
