@@ -1,0 +1,15 @@
+//Leia um número inteiro (3 dígitos), calcule e escreva a soma de seus elementos (C + D + U).
+console.clear();
+const prompt = require ('prompt-sync')();
+
+  let numero = prompt('adicione 1 número de 3 dígitos. '); // pede os números como string
+  let numeros = numero.split(''); //usa esse recurso que separará cada caractere (split)
+
+  let num1 = +numeros[0]; //os caracteres serão colocados dentro de um array, ainda como string
+  let num2 = +numeros[1]; // para efetuar a soma, será necessário transformar em a string em números
+  let num3 = +numeros[2]; // acesso cada índice do array e coloco o (+) na frente, transformando, então, a variável em números
+
+  let somaTodosNum = (num1 + num2 + num3); // agora os caracteres estão prontos para a operação final
+ // que retornará o que o comando da questão pede.
+
+console.log(`A soma dos algarismos ${num1} + ${num2} + ${num3} é igual a: ${somaTodosNum}`);
