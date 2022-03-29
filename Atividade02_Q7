@@ -1,0 +1,20 @@
+//Leia 3 números, calcule e escreva a soma dos 2 primeiros e a diferença entre os 2 últimos.
+
+   console.clear();
+const prompt = require ('prompt-sync')();
+   
+  let numero = prompt('adicione 1 número de 3 dígitos. '); // pede os números como string
+  let numeros = numero.split(''); //usa esse recurso que separará cada caractere (split)
+  console.clear();
+
+  let num1 = +numeros[0]; //os caracteres serão colocados dentro de um array, ainda como string
+  let num2 = +numeros[1]; // para efetuar a soma, será necessário transformar em a string em números
+  let num3 = +numeros[2]; // acesso cada índice do array e coloco o (+) na frente, transformando, então, a variável em números
+
+  let soma = (num1 + num2); //soma dos dois primeiros algarismos
+  let diferenca = (num2 - num3); //diferença dos dois últimos algarismos
+
+    console.log(`
+       A soma entre |  ${num1} + ${num2} = ${soma}      
+  A diferença entre |  ${num2} - ${num3} = ${diferenca} 
+  `)
