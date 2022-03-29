@@ -1,0 +1,16 @@
+//Leia um valor em horas e um valor em minutos, calcule e escreva o equivalente em minutos.
+
+   console.clear();
+ const prompt = require('prompt-sync')();
+
+    function somaminutos(horas , minutos){
+
+     horas = +prompt('Adicione um número de horas. ') // pede o número de horas ao usúário
+   minutos = +prompt('Adicione um número de minutos. ') //pede os minutos
+   console.clear(); // limpará o console, favorecendo a estética no terminal
+
+     let minutosTotais = (horas * 60) + minutos // variável para cálculo do resultado
+   console.log(`${horas} horas e ${minutos} minutos, são iguais a ${minutosTotais} minutos.`)
+} // linha 12: impressão do resultado final
+
+somaminutos(); // chamado da função para que ela seja efetiva
