@@ -1,0 +1,17 @@
+//Leia o valor do dólar e um valor em dólar, calcule e escreva o equivalente em real (R$).
+
+console.clear();
+const prompt = require('prompt-sync')();
+
+  function dolarpReal(dolar , quantidade , reais){
+
+      dolar = +prompt('Informe qual o valor do dólar atualmente. ') //valor do dólar 
+      quantidade = +prompt('Adicione quantos dólares você quer converter para real. ')//quantidades da moeda
+      reais = Math.trunc(dolar * quantidade)// conversão dos valores sem casas decimais
+
+      console.clear();
+      console.log(`${quantidade} doláres equivalem a ${reais} reais, hoje!`) //retorno do resultado
+
+  }
+
+  dolarpReal();
