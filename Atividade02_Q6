@@ -1,0 +1,10 @@
+//Leia uma velocidade em km/h, calcule e escreva esta velocidade em m/s. (Vm/s = Vkm/h / 3.6)
+
+console.clear();
+  const prompt = require('prompt-sync')();
+
+    let velocidadekm = +prompt('Adicione uma velocidade em quilometros ');
+    let conversao = Math.round(velocidadekm / 3.6) // variavel para converter km/h para m/s sem decimais
+
+console.clear();
+console.log(`A conversão de ${velocidadekm}km/h para m/s, resulta em ${conversao} m/s. `); // apresentação do resultado
