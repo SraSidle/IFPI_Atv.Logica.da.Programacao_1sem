@@ -1,0 +1,12 @@
+//Leia um valor em minutos, calcule e escreva o equivalente em horas e minutos.
+
+  console.clear();
+const prompt = require('prompt-sync')();
+
+    let valorEmMin = prompt('Adicione um valor em minutos. '); //entrada do valor em minutos
+  console.clear();
+
+    let minParaHoras = Math.trunc(valorEmMin / 60);//comando para dividir minutos por 60 e (Math.trunc) para não contar o resto
+    let minResto = (valorEmMin % 60); //comando para pegar o resto e sem decimais
+
+  console.log(`${valorEmMin} minutos são: ${minParaHoras} horas e ${minResto} minutos. `);//saída do resultado
