@@ -1,0 +1,20 @@
+//Leia 2 números inteiros, calcule e escreva o quociente e o resto da divisão do 1o pelo 2o.
+
+console.clear();
+const prompt = require('prompt-sync')();
+
+function restoDeInteiros(num1 , num2 , quociente , resto) {
+    num1 = +prompt('Digite um número ')
+    num2 = +prompt('Digite outro número ')
+    quociente = Math.round(num1 / num2) //variável para divisão, com Math.round para não devolver com decimais
+    resto = (num1 % num2) //variável para acessar resto
+
+         console.clear()
+         console.log(`
+    O quociente da divisão de ${num1} por ${num2} é igual a: ${quociente}.
+    O resto da divisão de ${num1} por ${num2} é igual a: ${resto}.  
+         `)
+         return
+}
+
+restoDeInteiros(); //chamar a função
