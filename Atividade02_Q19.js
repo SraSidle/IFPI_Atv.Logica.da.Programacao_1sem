@@ -4,13 +4,13 @@ console.clear();
 const prompt = require ('prompt-sync')();
 
 function esferaV(raio , pi , volume){
-    
+
     raio = +prompt('Adicione o valor do raio da esfera. ')
     pi = 3.14
     volume = Math.trunc(4 * pi * (raio ** 3) / 3 )
 
     console.clear();
-    console.log(`O volume dessa circunferência é: ${volume}`)
+    console.log(`O volume dessa esfera é: ${volume}`)
 
 }
 esferaV();
