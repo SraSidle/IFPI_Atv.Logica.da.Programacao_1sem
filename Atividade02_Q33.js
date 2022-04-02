@@ -3,14 +3,12 @@
 console.clear();
 const prompt = require('prompt-sync')();
 
-const numero = +prompt('Adicione um número de 3 dígitos');
-const centena = Math.round(numero / 100)
-const dezena = Math.trunc((numero % 100) / 10)
-const unidade = Math.trunc(numero % 10)
+const numero = +prompt('Adicione um número de 3 dígitos. ');
+const centena = Math.trunc(numero / 100).toString(); //transforma o número em string pra poder concatenar
+const dezena = Math.trunc((numero % 100) / 10).toString();//na ordem desejada, transformando em números, para poder fazer o cálculo
+const unidade = Math.trunc(numero % 10).toString();
 
-console.log( numero)
-console.log(centena)
-console.log(dezena)
-console.log(unidade)
-const inversao = (`${unidade} ${dezena} ${centena} }`) 
-console.log(inversao)
+const inversao = +(unidade + dezena + centena); //o + na frente transforma em número
+const soma = numero + inversao;
+
+console.log(`A soma de ${numero} + seu inverso: ${inversao} é igual a ${soma}`);
