@@ -1,16 +1,14 @@
 //Leia um número inteiro (4 dígitos binários), calcule e escreva o equivalente na base decimal.
 console.clear();
 const prompt = require('prompt-sync')();
+const colors = require('colors');
 
-function intpBinarios(num) {
+const binario = prompt('Adicione um valor me binários. ');
 
- const numero = (num);
- const binario = (numero % 2).toString();
- for(;numero > 1;) {
-     num = parseInt(numero / 2);
-     binario = (numero % 2) + (binario);
- }
- console.log(binario)
-}
+//fórmula para converter o num de entrada
+//Math.pow retorna a base elevada ao expoente
+ 
+const convertDec = binario[0] * Math.pow(2,3) + binario[1] * Math.pow (2,2) + binario[2] * Math.pow(2,1) + binario[3] * Math.pow(2,0); 
+//créditos ao Iago, que me ajudou com essa fórmula.
+console.log(`A conversão de ${binario} em valor binário, para decimal é igual a: ${convertDec}.`.magenta);
 
-intpBinarios(2);
